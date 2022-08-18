@@ -2,9 +2,9 @@
 
 Este repositorio esta realizado con fines educativos, en caso de querer modificarlo, favor hacer el **pull request** correspondiente
 
-# ¿Qué encontraras aquí?
+# ¿Qué encontrarás aquí?
 
-Material de apoyo que tocará diversos temas relacionados al mundo del desarrollo de aplicaciones móviles hibridas como:
+Material de apoyo que tocará diversos temas relacionados al mundo del desarrollo de aplicaciones móviles híbridas como:
 
 1. Uso de Git y GitHub
 2. Preparación de ambiente de desarrollo con Angular
@@ -12,7 +12,7 @@ Material de apoyo que tocará diversos temas relacionados al mundo del desarroll
 4. Pronto más actualizaciones
 
 # ¿Para quién va dirigido?
-Principalmente dirigido para los estudiantes del Duoc UC Sede San Bernardo que estén cursando la asignatura desarrollo de aplicaciones móviles con el docente Julio Herrera, material puede ser usado libremente siempre y cuando se den **los créditos correspondientes al trabajo realizado**.
+Principalmente dirigido para los estudiantes del Duoc UC Sede San Bernardo que estén cursando la asignatura desarrollo de aplicaciones móviles con el docente Julio Herrera, material puede ser utilizado libremente siempre y cuando se den **los créditos correspondientes al autor**.
 
 # ¿Cuándo se actualiza?
 
