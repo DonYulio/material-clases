@@ -98,7 +98,7 @@ Una vez descargado, procederemos a ejecutar el comando que nos muestra en un nue
 ```bash
 nvm use <version>
 ```
-* Reemplazar <version> con la versión que nvm acaba de instalar.
+* Reemplazar <**version**> con la versión que nvm acaba de instalar.
 
 ![NVM use Windows](./img/nvm%20use%20windows.png)
 
