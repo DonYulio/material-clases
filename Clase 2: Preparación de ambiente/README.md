@@ -94,7 +94,11 @@ Con esto instalaremos la última versión con soporte a largo plazo (LTS)
 
 ![Instalando Windows](./img/instalando%20windows.png)
 
-Una vez descargado, procederemos a ejecutar el comando que nos muestra en un nuevo CMD como administrador
+Una vez descargado, procederemos a ejecutar el comando que nos muestra en un nuevo CMD como administrador.
+```bash
+nvm use <version>
+```
+* Reemplazar <version> con la versión que nvm acaba de instalar.
 
 ![NVM use Windows](./img/nvm%20use%20windows.png)
 
