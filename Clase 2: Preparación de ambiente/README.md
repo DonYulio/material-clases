@@ -162,9 +162,9 @@ Se desplegará toda la información sobre el **Angular CLI** y dependencias que 
 
 Para trabajar con angular, se recomienda instalar las siguientes extensiones en Visual Studio Code, el cuales son las siguientes:
 
-1. Angular Language Service
+1. Angular Language Service<br>
    ![Angular Language Service](./img/ALS.png)
-2. EditorConfig for VS Code
+2. EditorConfig for VS Code<br>
    ![EditorConfig for VS Code](./img/ECFVSCODE.png)
    
 El cual, el primero nos servirá para entregarnos autocorrección en nuestros componentes y ayudas útiles al momento de codificar, y el segundo nos obligará a mantener una sintaxis similar entre los integrantes del proyecto.
