@@ -1,0 +1,45 @@
+<h1>String interpolation</h1>
+<p>Llamando el atributo nombre desde nuestro ts</p>
+<p>Mi nombre es {{ nombre }}</p>
+<p>El resultado de la suma 80 + 30 {{ 80 + 30}}</p>
+<p>El resultado de la resta 80 - 20 {{ 80 - 20 }}</p>
+<h2>Uso de Pipe</h2>
+<p>Los pipes son funciones que se ejecutan bajo la técnica Memoized </p>
+<p>mi nombre en mayúsculas {{ nombre | uppercase }} </p>
+<p>mi nombre en minúscula {{ nombre | lowercase }} </p>
+<h2>Uso de Funciones</h2>
+<p>La suma de 40 + 50 es {{ sumar(40,50) }}</p>
+<h1>Event Binding</h1>
+<button (click)="eventoBoton($event)">Apretame</button>
+<h1>Usando String interpolation y Event Binding</h1>
+<button (click)="aumentarContador()">Aumentar contador</button>
+<p>{{ contador }}</p>
+<p>El scroll está en {{scroll}}</p>
+<section
+  class="section"
+  (scroll)="scrollEn($event)">
+
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus autem, dolor sequi incidunt facere, numquam
+  nihil doloremque ducimus eveniet at vitae tempore eos quasi qui fugit reiciendis! Harum, reprehenderit totam.
+  Laborum, maiores fugit? Aperiam tempora consequuntur ex eos recusandae aspernatur, soluta perspiciatis fugiat sequi
+  unde qui! Rerum perferendis perspiciatis natus nesciunt excepturi, omnis ipsum, non mollitia ullam deleniti accusamus
+  eveniet.
+  Iste nemo blanditiis velit, magnam, tempora quis odio consequuntur libero repellat soluta quisquam eligendi sed error
+  voluptas officia perferendis, sequi nisi! Nisi, ipsam officia rem obcaecati doloremque enim dolore iste!
+  Quo veniam, vero, maiores minus reiciendis modi hic ducimus dolor non similique pariatur aliquid sint at asperiores
+  nam unde veritatis dicta doloribus nobis alias? Veniam cupiditate vitae dolor minima repudiandae?
+  Fuga voluptates at vero nobis repellendus non et modi nisi cumque provident ea quod, cum pariatur atque tenetur
+  incidunt consequatur impedit corporis earum molestias rem. Ab eveniet molestiae a tempora?
+  Nemo, dolore sed? Accusamus voluptas totam at, provident dolorem suscipit sed obcaecati molestias aliquam modi
+  incidunt recusandae consequatur asperiores, numquam quod impedit nisi quo veritatis commodi voluptatum animi, porro
+  maiores?
+  Est sed magni vel, ullam soluta blanditiis consequatur maiores omnis! Perspiciatis sequi atque veniam? Velit, dolor
+  cum quasi ex corporis hic ab omnis neque sequi at optio eveniet molestias. Repellat.
+  Sit quod commodi facere aspernatur quibusdam repellendus ea at magni placeat corporis atque nesciunt deserunt
+  reiciendis eius obcaecati voluptatem consequatur provident aliquid minus error omnis, quasi eum? Obcaecati, doloremque
+  culpa.
+  Nulla, iure provident vel obcaecati dignissimos non eveniet ad architecto adipisci fuga, ex, cupiditate itaque dicta
+  omnis in pariatur est quos sequi eos voluptatem dolorem sapiente. Aliquam est qui assumenda!
+  Enim culpa cum assumenda officiis ipsa obcaecati, placeat quaerat quidem porro voluptates labore dolor quo consequatur
+  doloremque. Dicta fugit excepturi soluta ipsam facilis ratione beatae ducimus. Nulla quas illum exercitationem!
+</section>
