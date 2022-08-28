@@ -1,0 +1,52 @@
+<!-- <h1>Property Binding</h1>
+<img [src]="imagen">
+<br>
+<h2>Escuchando un evento Change</h2>
+<input
+  type="range"
+  min="0"
+  max="100"
+  [value]="valorActual"
+  (input)="cambiarValorActual($event)"
+>
+{{ valorActual }}%
+<progress max="100" [value]="valorActual"></progress>
+<hr>
+<input type="number" [value]="ancho" (input)="cambiarAncho($event)">
+<input type="number" [value]="alto" (input)="cambiarAlto($event)">
+<br>
+<img [src]="imagen" [width]="ancho" [height]="alto"> -->
+
+<h1>NgClass y NgStyle</h1>
+<input type="range" min="0" max="100" [value]="valorBarra" (input)="cambiarValorBarra($event)">
+<br>
+<p>Property Binding</p>
+<progress
+    max="100"
+    [value]="valorBarra"
+    [class.rojo]="valorBarra <= 20"
+    [class.naranja]="valorBarra > 20 && valorBarra <= 70"
+    [class.azul]="valorBarra > 70"
+></progress>
+<p>Directiva NgClass</p>
+<progress
+    max="100"
+    [value]="valorBarra"
+    [ngClass]="{
+      rojo: valorBarra <= 20,
+      naranja: valorBarra > 20 && valorBarra <= 70,
+      azul: valorBarra > 70
+    }"
+></progress>
+<hr>
+<input type="range" min="0" max="100" [value]="tamanioFuente" (input)="cambiarFuente($event)">
+<input type="color" [value]="color" (input)="cambiarColor($event)">
+<br>
+<p
+    [ngStyle]="{
+      'font-size.px': tamanioFuente,
+      'color': color
+    }"
+>
+  Hola soy un Párrafo :D
+</p>
