@@ -16,4 +16,4 @@ Principalmente dirigido para los estudiantes del Duoc UC Sede San Bernardo que e
 
 # ¿Cuándo se actualiza?
 
-Este repositorio se actualizará semanalmente todos los sábados, con el material nuevo visto en clases, como también, tips extras que serán útiles para la asignatura.
+Este repositorio se actualizará semanalmente todos los findes despues de clases, con el material nuevo visto en clases, como también, tips extras que serán útiles para la asignatura.
