@@ -1,0 +1,33 @@
+<section>
+  <p
+  *ngFor="let variable of personas"
+  >
+  Nombre: {{variable.nombre}}
+  <br>
+  Apellido: {{variable.apellido}}
+  <br>
+  Edad: {{variable.edad}}
+  </p>
+</section>
+<hr>
+<section>
+  <p
+    *ngFor="let variable of personas;index as indice; first as primero; last as ultimo; count as cantidad; even as par; odd as impar"
+  >
+    <span *ngIf="primero">Soy el primer elemento</span>
+    <br>
+    <span *ngIf="ultimo">Soy el ultimo elemento</span>
+    <br>
+    Soy el elemento {{ indice }} de {{ cantidad }}
+    <br>
+    <span *ngIf="par">Soy indice par</span>
+    <br>
+    <span *ngIf="impar">Soy indice impar</span>
+    <br>
+    Nombre: {{variable.nombre}}
+    <br>
+    Apellido: {{variable.apellido}}
+    <br>
+    Edad: {{variable.edad}}
+  </p>
+</section>
