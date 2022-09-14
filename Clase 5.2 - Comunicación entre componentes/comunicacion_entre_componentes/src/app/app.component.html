@@ -1,0 +1,9 @@
+<app-contador
+  [valorInicial]="contadorUno"
+  (nuevoValor)="escucharHijoUno($event)"
+></app-contador>
+<hr>
+<app-contador
+  [valorInicial]="contadorDos"
+  (nuevoValor)="escucharHijoDos($event)"
+></app-contador>
