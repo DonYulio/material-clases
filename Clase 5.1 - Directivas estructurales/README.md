@@ -267,4 +267,72 @@ Elemento impar
 ![Elemento par](./img/Elemento%20impar.png)
 
 
+# Uso de NgSwich NgSwitchCase NgSwitchDefalt
+ 
+**Nota:** para este ejemplo se creará un componente llamado **“usoNgSwitch”**
 
+Este tipo de validación es completamente diferente si la comparamos con la directiva NgIf, ya que, su forma de funcionar es por “casos”, por lo tanto, se usa cuando los valores que se están evaluando son conocidos y no muchos, ya que, aquí no van “condiciones” si no valores.
+
+Para realizar un ejemplo, aplicaremos una variable **“string”** que cambie cuando un **select** lo disponga, de esta manera usando **NgSwitch** y **NgSwitchCase** mostraremos o ocultaremos elementos en base a las coincidencias.
+
+```typescript
+// Archivo uso-ng-switch.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-uso-ng-switch',
+  templateUrl: './uso-ng-switch.component.html',
+  styleUrls: ['./uso-ng-switch.component.scss']
+})
+export class UsoNgSwitchComponent  {
+  public opciones: Array<string> = [
+    '🍕',
+    '🍔',
+    '🍟',
+    '🌭',
+    '🍿',
+  ]
+
+  public seleccion: string = 'Nada';
+
+  public cambiarSeleccion({ target }: Event): void {
+    const elemento = target as HTMLInputElement;
+    this.seleccion = elemento.value;
+  }
+
+}
+```
+
+```html
+<!-- Archivo uso-ng-switch.component.html -->
+<select [value]="seleccion" (change)="cambiarSeleccion($event)">
+  <option value="Nada">No tengo gusto</option>
+  <option *ngFor="let item of opciones" [value]="item">{{item}}</option>
+</select>
+
+<section [ngSwitch]="seleccion">
+  <p *ngSwitchCase="'🍕'">Te gusta la pizza :D</p>
+  <p *ngSwitchCase="'🍔'">Te gusta la hamburguesa :o</p>
+  <p *ngSwitchCase="'🍟'">Te gusta las papitas :P</p>
+  <p *ngSwitchCase="'🌭'">Nunca es malo un completo</p>
+  <p *ngSwitchCase="'🍿'">Un helado de vainilla</p>
+  <p *ngSwitchDefault>Veo que no tienes ningún gusto :o</p>
+</section>
+```
+
+**Nota:** Para usar la directiva **NgSwitch** debe existir un contenedor y se hace mediante **Property Binding ([])** y los diferentes casos se llama la directiva NgSwitchCase o NgSwichDefault anteponiendo un asterisco **(*)**.
+
+Como podemos ver en el código anterior, tenemos una lista controlada en donde podemos poner código para cada caso, y para todo el resto que no coincida con los casos anteriores se aplicará lo que esta dentro del **ngSwitchDefault**, que se comportaría como un **“else”**
+
+
+## Resultado
+
+**Nota:** recuerda invocar nuestro componente ngUsoSwitch para ver el resultado:
+
+```html
+<!-- Archivo app.component.html -->
+...
+<app-uso-ng-switch></app-uso-ng-switch>
+```
+
+![Resultado switch](./img/resultado%20ngswitch.gif)

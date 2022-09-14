@@ -1,0 +1,13 @@
+<select [value]="seleccion" (change)="cambiarSeleccion($event)">
+  <option value="Nada">No tengo gusto</option>
+  <option *ngFor="let item of opciones" [value]="item">{{item}}</option>
+</select>
+
+<section [ngSwitch]="seleccion">
+  <p *ngSwitchCase="'🍕'">Te gusta la pizza :D</p>
+  <p *ngSwitchCase="'🍔'">Te gusta la hamburguesa :o</p>
+  <p *ngSwitchCase="'🍟'">Te gusta las papitas :P</p>
+  <p *ngSwitchCase="'🌭'">Nunca es malo un completo</p>
+  <p *ngSwitchCase="'🍿'">Un helado de vainilla</p>
+  <p *ngSwitchDefault>Veo que no tienes ningún gusto :o</p>
+</section>
