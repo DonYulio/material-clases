@@ -49,7 +49,7 @@ Estas tres fases deberán pasar para hacer un **commit**, en donde se **repetir�
 
 ## Resumen de este punto
 
-![Ciclo local](https://raw.githubusercontent.com/DonYulio/material-clases/master/Clase%201%3A%20Git%20y%20GitHub/img/Local.png)
+![Ciclo local](https://raw.githubusercontent.com/DonYulio/material-clases/master/Clase%201%20-%20Git%20y%20GitHub/img/Local.png)
 
 El ciclo mostrado anteriormente se deberá seguir para crear versiones de nuestro proyecto.
 
@@ -141,7 +141,7 @@ Con esto realizado, acabas de subir tus cambios a la plataforma, por lo tanto, t
 
 ## Resumen
 
-![Ciclo remoto](https://raw.githubusercontent.com/DonYulio/material-clases/master/Clase%201%3A%20Git%20y%20GitHub/img/remoto.png)
+![Ciclo remoto](https://raw.githubusercontent.com/DonYulio/material-clases/master/Clase%201%20-%20Git%20y%20GitHub/img/remoto.png)
 
 De esta manera entramos en un ciclo de trabajo colaborativo que se repetirá hasta que el proyecto se termine o ya no se necesiten hacer más cambios.
 
