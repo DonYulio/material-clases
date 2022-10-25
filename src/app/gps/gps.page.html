@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>GPS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="obtenerUbicacion()">Obtener Ubicación</ion-button>
+  <pre *ngIf="coordenadas">
+    {{ coordenadas.coords | json }}
+  </pre>
+</ion-content>

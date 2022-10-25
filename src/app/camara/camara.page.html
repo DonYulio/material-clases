@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CAMARA Estatica</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-button (click)="tomarFoto()">Tomar Foto</ion-button>
+  <ion-button *ngIf="foto" (click)="guardarImagen()">Guardar imagen</ion-button>
+  <ion-img *ngIf="foto" [src]="foto"></ion-img>
+</ion-content>
